@@ -1,0 +1,15 @@
+
+<test-suite>
+    <set name="EXTRA_ADDRERSS" value="18:E7:77:00:0C:40" />
+    <target id="TARGET_ID" address="${EXTRA_ADDRERSS}"/>
+
+    <test id="scan_ble_device" description="扫描ble 设备">
+        <scan-for address="${EXTRA_ADDRERSS}" expected="SUCCESS"/>
+        <connect target="TARGET_ID" expected="SUCCESS"/>
+        <disconnect target="TARGET_ID" expected="SUCCESS"/>
+    </test>
+
+    <run-test ref="scan_ble_device">
+
+    </run-test>
+</test-suite>

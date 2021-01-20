@@ -15,3 +15,7 @@
 local.properties
 /.idea/
 /.idea/
+/sample_test_hrm_result.txt
+/sample_test_scanning_result.txt
+/scan_ble_device_result.txt
+/scan_connect_disconnect_ble_device_result.txt
